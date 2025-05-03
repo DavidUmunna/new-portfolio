@@ -1,0 +1,11 @@
+@import "tailwindcss"
+
+/* Custom base styles */
+/*@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply antialiased;
+  }
+}*/

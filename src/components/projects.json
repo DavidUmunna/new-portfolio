@@ -1,0 +1,26 @@
+[
+    {
+      "title": "E-Commerce Platform",
+      "image":"./assets/Screenshot 2025-05-03 181552.png",
+      "description": "Full-stack e-commerce solution with React & Node.js",
+      "tags": ["React", "Node.js", "MongoDB"],
+      "link": "https://scintillating-buttercream-916f21.netlify.app",
+      "github": "https://github.com/DavidUmunna/electronics-ecommerce.git"
+    },
+    {
+      "title": "Task Management App",
+      "image": "",
+      "description": "Productivity app with real-time collaboration",
+      "tags": ["Mongoose", "React", "Tailwind","express"],
+      "link": "https://reqmanusers.netlify.app/signin",
+      "github": "https://github.com/DavidUmunna/procurement-users-panel"
+    },
+    {
+        "title": "Travel Agency Website",
+        "image": "",
+        "description": "A simple website that helps travelers pinpoint thier next exciting location ",
+        "tags": [ "React", "Tailwind"],
+        "link": "https://trailblisstravels.netlify.app",
+        "github": "https://github.com/DavidUmunna/trailbliss-travels.git"
+      }
+]
