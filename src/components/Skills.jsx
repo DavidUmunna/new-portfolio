@@ -1,49 +1,75 @@
 import React from "react";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
+import {
+  SiReact,
+  SiJavascript,
+  SiNodedotjs,
+  SiMongodb,
+  SiExpress,
+  SiFastapi,
+  SiPython,
+} from "react-icons/si";
 
-const Skills=()=>{
-    const skills = [
-        { name: "React", level: 80 },
-        { name: "JavaScript", level: 85 },
-        { name: "Node.js", level: 80 },
-        { name: "MongoDb", level: 75 },
-        { name: "Express", level: 70 },
-        { name: "Fastapi", level: 50 },
-        { name: "Python", level: 70 }
-      ];
+const skillGroups = [
+  {
+    category: "Frontend",
+    skills: [
+      { name: "React", icon: SiReact, color: "#61DAFB" },
+      { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+    ],
+  },
+  {
+    category: "Backend",
+    skills: [
+      { name: "Node.js", icon: SiNodedotjs, color: "#3C873A" },
+      { name: "Express", icon: SiExpress, color: "#FFFFFF" },
+      { name: "FastAPI", icon: SiFastapi, color: "#009688" },
+      { name: "Python", icon: SiPython, color: "#3776AB" },
+    ],
+  },
+  {
+    category: "Database",
+    skills: [
+      { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+    ],
+  },
+];
 
-    return (
-        <div>
-            <section id="skills" className="container mx-auto px-6 py-20 bg-gray-800/50 rounded-xl my-12">
-              <h2 className="text-3xl font-bold mb-12 text-center">
-                My <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">Skills</span>
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                {skills.map((skill, index) => (
+const Skills = () => {
+  return (
+    <div>
+      <section id="skills" className="container mx-auto px-6 py-20 bg-gray-800/50 rounded-xl my-12">
+        <h2 className="text-3xl font-bold mb-12 text-center">
+          My <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">Skills</span>
+        </h2>
+        <div className="max-w-4xl mx-auto space-y-10">
+          {skillGroups.map((group) => (
+            <div key={group.category}>
+              <h3 className="text-lg font-semibold text-gray-400 mb-4 uppercase tracking-wide">
+                {group.category}
+              </h3>
+              <div className="flex flex-wrap gap-4">
+                {group.skills.map((skill, index) => (
                   <motion.div
-                    key={index}
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    key={skill.name}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.4, delay: index * 0.08 }}
                     viewport={{ once: true }}
+                    className="flex items-center gap-3 px-5 py-3 bg-gray-800 rounded-full border border-gray-700 hover:border-purple-500 transition"
                   >
-                    <div className="flex justify-between mb-2"  >
-                      <span className="font-medium">{skill.name}</span>
-                      <span>{skill.level}%</span>
-                    </div>
-                    <div className="w-full bg-gray-700 rounded-full h-2.5">
-                      <div
-                        className="bg-gradient-to-r from-purple-500 to-pink-600 h-2.5 rounded-full"
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
-                    </div>
+                    <skill.icon size={22} style={{ color: skill.color }} />
+                    <span className="font-medium">{skill.name}</span>
                   </motion.div>
                 ))}
               </div>
-            </section>
+            </div>
+          ))}
         </div>
-    )
-
+      </section>
+    </div>
+  )
 }
 
 export default Skills

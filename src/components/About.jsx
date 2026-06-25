@@ -17,7 +17,13 @@ const About=()=>{
                   viewport={{ once: true }}
                   className="md:w-1/3"
                 >
-                  <div className="w-64 h-64 mx-auto bg-gradient-to-br from-purple-500 to-pink-600 rounded-full shadow-xl" />
+                  <div className="w-64 h-64 mx-auto rounded-full shadow-xl overflow-hidden bg-gradient-to-br from-purple-500 to-pink-600">
+                    <img
+                      src="./assets/profile.jpg"
+                      alt="David Umunna"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </motion.div>
                 <motion.div
                   initial={{ x: 100, opacity: 0 }}
