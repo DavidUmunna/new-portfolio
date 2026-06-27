@@ -8,6 +8,7 @@ import {
   SiExpress,
   SiFastapi,
   SiPython,
+  SiJava
 } from "react-icons/si";
 
 const skillGroups = [
@@ -25,6 +26,7 @@ const skillGroups = [
       { name: "Express", icon: SiExpress, color: "#FFFFFF" },
       { name: "FastAPI", icon: SiFastapi, color: "#009688" },
       { name: "Python", icon: SiPython, color: "#3776AB" },
+      { name: "Java", icon: SiJava, color: "#007396" }
     ],
   },
   {
