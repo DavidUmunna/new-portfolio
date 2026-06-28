@@ -2,6 +2,13 @@ import React from "react";
 import Projects from "./projects.json"
 import {motion} from "framer-motion"
 import { FiGithub, FiExternalLink, FiMail, FiLinkedin } from 'react-icons/fi';
+import travelImg from "./assets/travel_1.jpg";
+import researchAgentImg from "./assets/researchAgent.png";
+
+const imageMap = {
+  "assets/travel_1.jpg": travelImg,
+  "assets/researchAgent.png": researchAgentImg,
+};
 
 const Projects_comp=()=>{
     return(
@@ -20,7 +27,15 @@ const Projects_comp=()=>{
                     viewport={{ once: true }}
                     className="bg-gray-800/50 rounded-xl overflow-hidden hover:shadow-lg transition"
                   >
-                    <div className="h-48 bg-gradient-to-r from-purple-500/30 to-pink-600/30"></div>
+                    <div className="h-48 bg-gradient-to-r from-purple-500/30 to-pink-600/30">
+                    {imageMap[project.image] && (
+                      <img
+                        src={imageMap[project.image]}
+                        alt={project.title}
+                        className="w-full h-full object-cover"
+                      />
+                    )}
+                    </div>
                     <div className="p-6">
                       <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
                       <p className="text-gray-400 mb-4">{project.description}</p>
