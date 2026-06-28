@@ -8,7 +8,12 @@ import {
   SiExpress,
   SiFastapi,
   SiPython,
-  SiJava
+  SiOpenjdk,
+  SiGithubactions,
+  SiJenkins,
+  SiDocker,
+  SiNginx,
+  SiWireshark,
 } from "react-icons/si";
 
 const skillGroups = [
@@ -26,13 +31,33 @@ const skillGroups = [
       { name: "Express", icon: SiExpress, color: "#FFFFFF" },
       { name: "FastAPI", icon: SiFastapi, color: "#009688" },
       { name: "Python", icon: SiPython, color: "#3776AB" },
-      { name: "Java", icon: SiJava, color: "#007396" }
+      { name: "Java", icon: SiOpenjdk, color: "#007396" }
     ],
   },
   {
     category: "Database",
     skills: [
       { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+    ],
+  },
+  {
+    category: "CI/CD",
+    skills: [
+      { name: "GitHub Actions", icon: SiGithubactions, color: "#2088FF" },
+      { name: "Jenkins", icon: SiJenkins, color: "#D24939" },
+      { name: "Docker", icon: SiDocker, color: "#2496ED" },
+    ],
+  },
+  {
+    category: "Server",
+    skills: [
+      { name: "Nginx", icon: SiNginx, color: "#009639" },
+    ],
+  },
+  {
+    category: "Security",
+    skills: [
+      { name: "Wireshark", icon: SiWireshark, color: "#1679A7" },
     ],
   },
 ];
