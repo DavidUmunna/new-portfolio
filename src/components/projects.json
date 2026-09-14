@@ -11,6 +11,7 @@
       },
       {
         "title":"Bank Account System",
+        "image":"assets/bankAccount.png",
         "description":"A simple multithreaded  bank account system that demonstrates concurrency implementation and transaction management",
         "tags":["Java", "Spring Boot"],
         "github":"https://github.com/DavidUmunna/BankAccountSystem.git"
@@ -22,6 +23,15 @@
         "description":"A simple research agent that uses web scraping to gather information from the web and makes use of RAG (Retrieval Augmented Generation) to provide relevant information to the use and perform proper planning",
         "tags":["Python", "React", "GroqLLM"],
         "github":"https://github.com/DavidUmunna/ResearchAgent.git"
+
+      },
+      {
+        "title":"AD-Pro Safe Ltd",
+        "image":"assets/adProSafe.png",
+        "description":"Marketing website for a process safety and control systems integration consultancy, covering COMAH safety reports, LOPA & SIL assurance, and Bowtie barrier management for high-risk industry.",
+        "tags":["React", "Vite", "Tailwind CSS", "React Router"],
+        "link":"https://adprosafe.co.uk",
+        "github":"https://github.com/DavidUmunna/AD-Pro_safe_LTD.git"
 
       }
 
