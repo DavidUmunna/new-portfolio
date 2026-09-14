@@ -5,11 +5,13 @@ import { FiGithub, FiExternalLink, FiMail, FiLinkedin } from 'react-icons/fi';
 import travelImg from "./assets/travel_1.jpg";
 import researchAgentImg from "./assets/researchAgent.png";
 import adProSafeImg from "./assets/adProSafe.png";
+import bankAccountImg from "./assets/BankAccount.png";
 
 const imageMap = {
   "assets/travel_1.jpg": travelImg,
   "assets/researchAgent.png": researchAgentImg,
   "assets/adProSafe.png": adProSafeImg,
+  "assets/BankAccount.png": bankAccountImg,
 };
 
 const Projects_comp=()=>{
