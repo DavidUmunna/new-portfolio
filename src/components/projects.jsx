@@ -6,12 +6,14 @@ import travelImg from "./assets/travel_1.jpg";
 import researchAgentImg from "./assets/researchAgent.png";
 import adProSafeImg from "./assets/adProSafe.png";
 import bankAccountImg from "./assets/BankAccount.png";
+import noShowKillerImg from "./assets/noShowKiller.png";
 
 const imageMap = {
   "assets/travel_1.jpg": travelImg,
   "assets/researchAgent.png": researchAgentImg,
   "assets/adProSafe.png": adProSafeImg,
   "assets/BankAccount.png": bankAccountImg,
+  "assets/noShowKiller.png": noShowKillerImg,
 };
 
 const Projects_comp=()=>{
