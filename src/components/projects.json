@@ -11,7 +11,7 @@
       },
       {
         "title":"Bank Account System",
-        "image":"assets/bankAccount.png",
+        "image":"assets/BankAccount.png",
         "description":"A simple multithreaded  bank account system that demonstrates concurrency implementation and transaction management",
         "tags":["Java", "Spring Boot"],
         "github":"https://github.com/DavidUmunna/BankAccountSystem.git"
