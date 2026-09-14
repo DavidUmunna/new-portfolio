@@ -10,6 +10,18 @@
   </head>
   <body>
     <div id="root"></div>
+    <!--
+      Static shim so Netlify's build-time bot can detect this form and provision
+      an endpoint for it. The real, visible form lives in
+      src/components/Contact.jsx and submits to it via fetch. See that file
+      for details.
+    -->
+    <form name="contact" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+      <input type="text" name="bot-field" />
+    </form>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
