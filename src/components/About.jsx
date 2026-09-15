@@ -34,8 +34,9 @@ const About=()=>{
                   className="md:w-2/3"
                 >
                   <p className="text-lg text-gray-300 mb-6">
-                    I'm a passionate developer with  experience creating web applications and Engineering end to end solutions
-                    
+                    I'm a full-stack developer who turns ambiguous problems into dependable,
+                    end-to-end systems, from client-facing websites to backend services and
+                    AI-driven tools. I care about solving problems effectively and efficiently not just writing code.
                   </p>
                   <p className="text-lg text-gray-300 mb-6">
                     When I'm not coding, you can find me having a good read, doing some training,

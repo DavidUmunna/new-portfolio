@@ -15,12 +15,13 @@ const Hero=()=>{
                   Hi, I'm <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">David</span>
                 </h1>
                 <h2 className="text-2xl md:text-3xl mb-6 text-gray-300">
-                  backend/fullstack Developer
+                  Full-Stack Developer, Backend-Focused
                 </h2>
                 <p className="text-lg md:text-xl max-w-2xl mx-auto md:mx-0 text-gray-400">
-                "I build impactful digital solutions using modern technologies. 
-                Currently focused on developing robust backend systems with Node.js and Express, 
-                and creating seamless user interfaces with React."
+                  I design and ship production-ready systems, from a live consultancy website
+                  serving real clients, to AI-powered research agents and workflow automation
+                  tools. My toolkit centers on Node.js, Express, and React, backed by Python,
+                  Java, and a CI/CD-first workflow with Docker and GitHub Actions.
                 </p>
                 <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
                   <motion.a
